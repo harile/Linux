@@ -10,7 +10,7 @@ E. ext4
 **2. Which umask value ensures that new directories can be read, written and listed by their owning user, read and listed by their owning group and are not accessible at all for everyone else?**
 A. 0750
 B. 0027
-C. 0036
+C. 0036cd
 D. 7640
 E. 0029
 
