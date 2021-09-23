@@ -1,5 +1,5 @@
 ﻿# LPIC 1 - EXAM - APRIL 2021
-
+# LINUX LPIC-1 101-500
   
 
 **1.Which type of file system is created by mkfs when it is executed with the block device name only and without any additional parameters?**
@@ -327,3 +327,34 @@ C. /var/lib64/
 D. /lib64/
 
 E. /opt/lib64/
+
+
+
+--------
+Thêm phần đáp án nè
+1)C 
+2)B
+3)B
+4)E
+5)B
+6)updatedb
+7)A
+8)C
+9)CE
+10)AD
+11)du
+12)E
+13)C
+14)C
+15)cmdline
+16)C
+17)A
+18)AD
+19)BD
+20)D
+21)AE
+22)D
+23)D
+24)B
+25)BD
+
