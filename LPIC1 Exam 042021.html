@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="lpic-1---exam---april-2021">LPIC 1 - EXAM - APRIL 2021</h1>
+<p><strong>1.Which type of file system is created by mkfs when it is executed with the block device name only and without any additional parameters?</strong></p>
+<p>A. XFS</p>
+<p>B. VFAT</p>
+<p>C. ext2</p>
+<p>D. ext3</p>
+<p>E. ext4</p>
+<p><strong>2. Which umask value ensures that new directories can be read, written and listed by their owning user, read and listed by their owning group and are not accessible at all for everyone else?</strong></p>
+<p>A. 0750</p>
+<p>B. 0027</p>
+<p>C. 0036cd</p>
+<p>D. 7640</p>
+<p>E. 0029</p>
+<p><strong>3. Which of the following commands changes the number of days before the ext3 filesystem on /dev/sda1 has to run through a full filesystem check while booting?</strong></p>
+<p>A. tune2fs “”d 200 /dev/sda1</p>
+<p>B. tune2fs “”i 200 /dev/sda1</p>
+<p>C. tune2fs “”c 200 /dev/sda1</p>
+<p>D. tune2fs “”n 200 /dev/sda1</p>
+<p>E. tune2fs –days 200 /dev/sda1</p>
+<p><strong>4. Which is the default percentage of reserved space for the root user on new ext4 filesystems?</strong></p>
+<p>A. 10%</p>
+<p>B. 3%</p>
+<p>C. 15%</p>
+<p>D. 0%</p>
+<p>E. 5%</p>
+<p><strong>5. Which of the following is true when a file system, which is neither listed in /etc/fstab nor known to system, is mounted manually?</strong></p>
+<p>A. systemd ignores any manual mounts which are not done using the systemctl mount command</p>
+<p>B. The command systemctl mountsync can be used to create a mount unit based on the existing mount</p>
+<p>C. systemd automatically generates a mount unit and monitors the mount point without changing it</p>
+<p>D. Unless a systemd mount unit is created, systemd unmounts the file system after a short period of time</p>
+<p>E. systemctl unmount must be used to remove the mount because system opens a file descriptor on the mount point</p>
+<p>****6. FILL BLANK –</p>
+<p>Which program updates the database that is used by the locate command? (Specify ONLY the command without any path or parameters) ****</p>
+<ol start="7">
+<li>What does the command mount –bind do?</li>
+</ol>
+<p>A. It makes the contents of one directory available in another directory</p>
+<p>B. It mounts all available filesystems to the current directory</p>
+<p>C. It mounts all user mountable filesystems to the user”™s home directory</p>
+<p>D. It mounts all file systems listed in /etc/fstab which have the option userbind set</p>
+<p>E. It permanently mounts a regular file to a directory</p>
+<p>**<strong>8. Consider the following output from the command ls “”i:</strong></p>
+<p>How would a new file named c.txt be created with the same inode number as a.txt (Inode 525385)?**</p>
+<p>A. ln “”h a.txt c.txt</p>
+<p>B. ln c.txt a.txt</p>
+<p>C. ln a.txt c.txt</p>
+<p>D. ln “”f c.txt a.txt</p>
+<p>E. ln “”i 525385 c.txt</p>
+<p><strong>9. Consider the following directory:</strong></p>
+<p>drwxrwxr-x 2 root sales 4096 Jan 1 15:21 sales</p>
+<p>Which command ensures new files created within the directory sales are owned by the group sales? (Choose two.)</p>
+<p>A. chmod g+s sales</p>
+<p>B. setpol “”R newgroup=sales sales</p>
+<p>C. chgrp “”p sales sales</p>
+<p>D. chown –persistent *.sales sales</p>
+<p>E. chmod 2775 sales</p>
+<p><strong>10. In order to display all currently mounted filesystems, which of the following commands could be used? (Choose two.)</strong></p>
+<p>A. cat /proc/self/mounts</p>
+<p>B. free</p>
+<p>C. lsmounts</p>
+<p>D. mount</p>
+<p>E. cat /proc/filesystems</p>
+<p>**11. FILL BLANK –</p>
+<p>Which command displays the current disk space usage for all mounted file systems? (Specify ONLY the command without any path or parameters.)**</p>
+<ol start="12">
+<li>Which chown command changes the ownership to dave and the group to staff on a file named data.txt?</li>
+</ol>
+<p>A. chown dave/staff data.txt</p>
+<p>B. chown “”u dave “”g staff data.txt</p>
+<p>C. chown –user dave –group staff data.txt</p>
+<p>D. chown dave+staff data.txt</p>
+<p>E. chown dave:staff data.txt</p>
+<p><strong>13. When considering the use of hard links, what are valid reasons not to use hard links?</strong></p>
+<p>A. Hard links are not available on all Linux systems because traditional filesystems, such as ext4, do not support them</p>
+<p>B. Each hard link has individual ownership, permissions and ACLs which can lead to unintended disclosure of file content</p>
+<p>C. Hard links are specific to one filesystem and cannot point to files on another filesystem</p>
+<p>D. If users other than root should be able to create hard links, suln has to be installed and configured</p>
+<p>E. When a hard linked file is changed, a copy of the file is created and consumes additional space</p>
+<p><strong>14. In compliance with the FHS, in which of the directories are man pages found?</strong></p>
+<p>A. /opt/man/</p>
+<p>B. /usr/doc/</p>
+<p>C. /usr/share/man/</p>
+<p>D. /var/pkg/man</p>
+<p>E. /var/man/</p>
+<p>**15. FILL BLANK –</p>
+<p>Which file in the /proc filesystem lists parameters passed from the bootloader to the kernel? (Specify the file name only without any path.)**</p>
+<p><strong>16. What is the process ID number of the init process on a System V init based system?</strong></p>
+<p>A. -1</p>
+<p>B. 0</p>
+<p>C. 1</p>
+<p>D. It is different with each reboot</p>
+<p>E. It is set to the current run level</p>
+<p><strong>17. Which daemon handles power management events on a Linux system?</strong></p>
+<p>A. acpid</p>
+<p>B. batteryd</p>
+<p>C. pwrmgntd</p>
+<p>D. psd</p>
+<p>E. inetd</p>
+<p><strong>18. Which of the following statements are true about the boot sequence of a PC using a BIOS? (Choose two.)</strong></p>
+<p>A. Some parts of the boot process can be configured from the BIOS</p>
+<p>B. Linux does not require the assistance of the BIOS to boot a computer</p>
+<p>C. The BIOS boot process starts only if secondary storage, such as the hard disk, is functional</p>
+<p>D. The BIOS initiates the boot process after turning the computer on</p>
+<p>E. The BIOS is started by loading hardware drivers from secondary storage, such as the hard disk</p>
+<p><strong>19. What is true regarding UEFI firmware? (Choose two.)</strong></p>
+<p>A. It can read and interpret partition tables</p>
+<p>B. It can use and read certain file systems</p>
+<p>C. It stores its entire configuration on the /boot/ partition</p>
+<p>D. It is stored in a special area within the GPT metadata</p>
+<p>E. It is loaded from a fixed boot disk position</p>
+<p><strong>20. A faulty kernel module is causing issues with a network interface card. Which of the following actions ensures that this module is not loaded automatically when the system boots?</strong></p>
+<p>A. Using lsmod –remove –autoclean without specifying the name of a specific module</p>
+<p>B. Using modinfo “”k followed by the name of the offending module</p>
+<p>C. Using modprobe “”r followed by the name of the offending module</p>
+<p>D. Adding a blacklist line including the name of the offending module to the file /etc/modprobe.d/blacklist.conf</p>
+<p>E. Deleting the kernel module”™s directory from the file system and recompiling the kernel, including its modules</p>
+<p><strong>21. When is the content of the kernel ring buffer reset? (Choose two.)</strong></p>
+<p>A. When the ring buffer is explicitly reset using the command dmesg –clear</p>
+<p>B. When the ring buffer is read using dmesg without any additional parameters</p>
+<p>C. When a configurable amount of time, 15 minutes by default, has passed</p>
+<p>D. When the kernel loads a previously unloaded kernel module</p>
+<p>E. When the system is shut down or rebooted</p>
+<p><strong>22. What is the first program the Linux kernel starts at boot time when using System V init?</strong></p>
+<p>A. /lib/init.so</p>
+<p>B. /proc/sys/kernel/init</p>
+<p>C. /etc/rc.d/rcinit</p>
+<p>D. /sbin/init</p>
+<p>E. /boot/init</p>
+<p><strong>23. A Debian package creates several files during its installation. Which of the following commands searches for packages owning the file /etc/debian_version?</strong></p>
+<p>A. apt-get search /etc/debian_version</p>
+<p>B. apt “”r /etc/debian_version</p>
+<p>C. find /etc/debian_version -dpkg</p>
+<p>D. dpkg “”S /etc/debian_version</p>
+<p>E. apt-file /etc/debian_version</p>
+<p><strong>24. What is contained on the EFI System Partition?</strong></p>
+<p>A. The Linux root file system</p>
+<p>B. The first stage boot loader</p>
+<p>C. The default swap space file</p>
+<p>D. The Linux default shell binaries</p>
+<p>E. The user home directories</p>
+<p><strong>25. Which of the following directories on a 64 bit Linux system typically contain shared libraries? (Choose two.)</strong></p>
+<p>A. ~/.lib64/</p>
+<p>B. /usr/lib64/</p>
+<p>C. /var/lib64/</p>
+<p>D. /lib64/</p>
+<p>E. /opt/lib64/</p>
+</div>
+</body>
+
+</html>
