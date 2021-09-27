@@ -2,7 +2,7 @@
 # LINUX LPIC-1 101-500
   
 
-**1.Which type of file system is created by mkfs when it is executed with the block device name only and without any additional parameters?**
+***1.Which type of file system is created by mkfs when it is executed with the block device name only and without any additional parameters?***
 
 A. XFS
 
@@ -16,7 +16,7 @@ E. ext4
 
   
 
-**2. Which umask value ensures that new directories can be read, written and listed by their owning user, read and listed by their owning group and are not accessible at all for everyone else?**
+***2. Which umask value ensures that new directories can be read, written and listed by their owning user, read and listed by their owning group and are not accessible at all for everyone else?***
 
 A. 0750
 
@@ -30,7 +30,7 @@ E. 0029
 
   
 
-**3. Which of the following commands changes the number of days before the ext3 filesystem on /dev/sda1 has to run through a full filesystem check while booting?**
+***3. Which of the following commands changes the number of days before the ext3 filesystem on /dev/sda1 has to run through a full filesystem check while booting?***
 
 A. tune2fs “”d 200 /dev/sda1
 
@@ -44,7 +44,7 @@ E. tune2fs –days 200 /dev/sda1
 
   
 
-**4. Which is the default percentage of reserved space for the root user on new ext4 filesystems?**
+***4. Which is the default percentage of reserved space for the root user on new ext4 filesystems?***
 
 A. 10%
 
@@ -58,7 +58,7 @@ E. 5%
 
   
 
-**5. Which of the following is true when a file system, which is neither listed in /etc/fstab nor known to system, is mounted manually?**
+***5. Which of the following is true when a file system, which is neither listed in /etc/fstab nor known to system, is mounted manually?***
 
 A. systemd ignores any manual mounts which are not done using the systemctl mount command
 
@@ -72,11 +72,10 @@ E. systemctl unmount must be used to remove the mount because system opens a fil
 
   
 
-****6. FILL BLANK –
+***6. FILL BLANK – Which program updates the database that is used by the locate command? (Specify ONLY the command without any path or parameters)***
 
-Which program updates the database that is used by the locate command? (Specify ONLY the command without any path or parameters) ****
 
-7. What does the command mount –bind do?
+***7. What does the command mount –bind do?***
 
 A. It makes the contents of one directory available in another directory
 
@@ -90,9 +89,9 @@ E. It permanently mounts a regular file to a directory
 
   
 
-****8. Consider the following output from the command ls “”i:**
+***8. Consider the following output from the command ls “”i:**
 
-How would a new file named c.txt be created with the same inode number as a.txt (Inode 525385)?**
+How would a new file named c.txt be created with the same inode number as a.txt (Inode 525385)?***
 
 A. ln “”h a.txt c.txt
 
@@ -106,11 +105,11 @@ E. ln “”i 525385 c.txt
 
   
 
-**9. Consider the following directory:**
+***9. Consider the following directory:***
 
 drwxrwxr-x 2 root sales 4096 Jan 1 15:21 sales
 
-Which command ensures new files created within the directory sales are owned by the group sales? (Choose two.)
+***Which command ensures new files created within the directory sales are owned by the group sales? (Choose two.)***
 
 A. chmod g+s sales
 
@@ -124,7 +123,7 @@ E. chmod 2775 sales
 
   
 
-**10. In order to display all currently mounted filesystems, which of the following commands could be used? (Choose two.)**
+***10. In order to display all currently mounted filesystems, which of the following commands could be used? (Choose two.)***
 
 A. cat /proc/self/mounts
 
@@ -138,11 +137,12 @@ E. cat /proc/filesystems
 
   
 
-**11. FILL BLANK –
+***11. FILL BLANK –
 
-Which command displays the current disk space usage for all mounted file systems? (Specify ONLY the command without any path or parameters.)**
+Which command displays the current disk space usage for all mounted file systems? (Specify ONLY the command without any path or parameters.)***
 
-12. Which chown command changes the ownership to dave and the group to staff on a file named data.txt?
+
+***12. Which chown command changes the ownership to dave and the group to staff on a file named data.txt?***
 
 A. chown dave/staff data.txt
 
@@ -156,7 +156,7 @@ E. chown dave:staff data.txt
 
   
 
-**13. When considering the use of hard links, what are valid reasons not to use hard links?**
+***13. When considering the use of hard links, what are valid reasons not to use hard links?***
 
 A. Hard links are not available on all Linux systems because traditional filesystems, such as ext4, do not support them
 
@@ -170,7 +170,7 @@ E. When a hard linked file is changed, a copy of the file is created and consume
 
   
 
-**14. In compliance with the FHS, in which of the directories are man pages found?**
+***14. In compliance with the FHS, in which of the directories are man pages found?***
 
 A. /opt/man/
 
@@ -184,13 +184,13 @@ E. /var/man/
 
   
 
-**15. FILL BLANK –
+***15. FILL BLANK –
 
-Which file in the /proc filesystem lists parameters passed from the bootloader to the kernel? (Specify the file name only without any path.)**
+Which file in the /proc filesystem lists parameters passed from the bootloader to the kernel? (Specify the file name only without any path.)***
 
   
 
-**16. What is the process ID number of the init process on a System V init based system?**
+***16. What is the process ID number of the init process on a System V init based system?***
 
 A. -1
 
@@ -204,7 +204,7 @@ E. It is set to the current run level
 
   
 
-**17. Which daemon handles power management events on a Linux system?**
+***17. Which daemon handles power management events on a Linux system?***
 
 A. acpid
 
@@ -218,7 +218,7 @@ E. inetd
 
   
 
-**18. Which of the following statements are true about the boot sequence of a PC using a BIOS? (Choose two.)**
+***18. Which of the following statements are true about the boot sequence of a PC using a BIOS? (Choose two.)***
 
 A. Some parts of the boot process can be configured from the BIOS
 
@@ -232,7 +232,7 @@ E. The BIOS is started by loading hardware drivers from secondary storage, such 
 
   
 
-**19. What is true regarding UEFI firmware? (Choose two.)**
+***19. What is true regarding UEFI firmware? (Choose two.)***
 
 A. It can read and interpret partition tables
 
@@ -246,7 +246,7 @@ E. It is loaded from a fixed boot disk position
 
   
 
-**20. A faulty kernel module is causing issues with a network interface card. Which of the following actions ensures that this module is not loaded automatically when the system boots?**
+***20. A faulty kernel module is causing issues with a network interface card. Which of the following actions ensures that this module is not loaded automatically when the system boots?***
 
 A. Using lsmod –remove –autoclean without specifying the name of a specific module
 
@@ -260,7 +260,7 @@ E. Deleting the kernel module”™s directory from the file system and recompil
 
   
 
-**21. When is the content of the kernel ring buffer reset? (Choose two.)**
+***21. When is the content of the kernel ring buffer reset? (Choose two.)***
 
 A. When the ring buffer is explicitly reset using the command dmesg –clear
 
@@ -274,7 +274,7 @@ E. When the system is shut down or rebooted
 
   
 
-**22. What is the first program the Linux kernel starts at boot time when using System V init?**
+***22. What is the first program the Linux kernel starts at boot time when using System V init?***
 
 A. /lib/init.so
 
@@ -288,7 +288,7 @@ E. /boot/init
 
   
 
-**23. A Debian package creates several files during its installation. Which of the following commands searches for packages owning the file /etc/debian_version?**
+***23. A Debian package creates several files during its installation. Which of the following commands searches for packages owning the file /etc/debian_version?***
 
 A. apt-get search /etc/debian_version
 
@@ -302,7 +302,7 @@ E. apt-file /etc/debian_version
 
   
 
-**24. What is contained on the EFI System Partition?**
+***24. What is contained on the EFI System Partition?***
 
 A. The Linux root file system
 
@@ -316,7 +316,7 @@ E. The user home directories
 
   
 
-**25. Which of the following directories on a 64 bit Linux system typically contain shared libraries? (Choose two.)**
+***25. Which of the following directories on a 64 bit Linux system typically contain shared libraries? (Choose two.)***
 
 A. ~/.lib64/
 
@@ -331,7 +331,7 @@ E. /opt/lib64/
 
 
 --------
-Thêm phần đáp án nè
+***Thêm phần đáp án nè***
 1)C
 
 2)B
